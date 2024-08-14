@@ -1,0 +1,56 @@
+::root {
+    --bs-primary: #5353eb;
+    --bs-link-hover-color: #5353eb;
+    --bs-link-color: #5353eb;
+    --bs-nav-pills-link-active-bg: #5353eb;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.detail {
+    list-style: none!important;
+}
+.detail li {
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.detail li::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    border-left: 1px dashed blue;
+}
+
+.detail li::before {
+    content: "";
+    display: block;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    left: -3px;
+    background: blue;
+}
+.detail li:last-child::after {
+    display: none;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 25px;
+    letter-spacing: -2px;
+}
+
+.personal-data {
+    list-style-type: none;
+    padding-left: 0;
+}
